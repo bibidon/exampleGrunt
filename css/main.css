@@ -1,0 +1,19 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/HTML\/exampleGrunt\/sass\/_base\.sass}line{font-family:\000031}}
+body {
+  background: #bada55;
+  color: #6F5A40;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/HTML\/exampleGrunt\/sass\/_base\.sass}line{font-family:\000035}}
+a {
+  -moz-transform: 0.3s;
+  -ms-transform: 0.3s;
+  -webkit-transform: 0.3s;
+  transform: 0.3s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/HTML\/exampleGrunt\/sass\/_base\.sass}line{font-family:\000038}}
+a:hover {
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */
