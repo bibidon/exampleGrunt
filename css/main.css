@@ -16,4 +16,29 @@ a:hover {
   color: #fff;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/HTML\/exampleGrunt\/sass\/_base\.sass}line{font-family:\0000311}}
+.Z2 {
+  background: url('../img/Z2.png?1389456580');
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/HTML\/exampleGrunt\/sass\/_base\.sass}line{font-family:\0000316}}
+.browser {
+  background: url('../img/browsers-sc620c3df47.png');
+  height: 512px;
+  width: 512px;
+  background-position: 0 0;
+  height: 2048px;
+  width: 2048px;
+  background-position: 0 -512px;
+  height: 1024px;
+  width: 1024px;
+  background-position: 0 -4608px;
+  height: 980px;
+  width: 980px;
+  background-position: 0 -5632px;
+  height: 2048px;
+  width: 2048px;
+  background-position: 0 -2560px;
+}
+
 /*# sourceMappingURL=main.css.map */

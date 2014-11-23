@@ -8,3 +8,30 @@ a
   &:hover
     color: #fff  
 
+.Z2
+  background: image-url("Z2.png")
+
+$browserIcons: sprite-map("browsers/*.png")
+
+.browser
+  background: sprite-url($browserIcons)
+
+  &.chrome
+  +sprite-dimensions($browserIcons, chrome)
+  background-position: sprite-position($browserIcons, chrome)
+
+  &.firefox
+  +sprite-dimensions($browserIcons, firefox)
+  background-position: sprite-position($browserIcons, firefox)
+
+  &.opera
+  +sprite-dimensions($browserIcons, opera)
+  background-position: sprite-position($browserIcons, opera)
+
+  &.safari
+  +sprite-dimensions($browserIcons, safari)
+  background-position: sprite-position($browserIcons, safari)
+
+  &.internet-explorer
+  +sprite-dimensions($browserIcons, internet-explorer)
+  background-position: sprite-position($browserIcons, internet-explorer)
