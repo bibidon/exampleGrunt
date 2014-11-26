@@ -1,4 +1,17 @@
-﻿.table-bordered {
+﻿$pink: #faa;
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	 border-radius: $radius;
+}
+@mixin btn {
+    position: absolute;
+    top: 9px;
+}
+
+
+.table-bordered {
     margin: auto;
     border: none;
     width: 50%!important;
@@ -16,12 +29,12 @@ td, th {
 
 .actions {
     position: relative;
-}
 
-    .actions button {
-        padding: 0;
-        margin: 0;
-    }
+	button {
+	         padding: 0;
+             margin: 0;
+	}
+}
 
 .btn-sort {
     padding: 0;
@@ -30,14 +43,12 @@ td, th {
 }
 
 .btn-edit, .btn-ok, .btn-addok {
-    position: absolute;
-    top: 9px;
+    @include btn;
     left: 8px;
 }
 
 .btn-trash, .btn-cansel, .btn-addcansel {
-    position: absolute;
-    top: 9px;
+    @include btn;
     right: 8px;
 }
 
@@ -65,38 +76,36 @@ td, th {
 #total {
     margin-left: 49.5em;
     font-weight: 700;
+
+	@media screen and (max-width: 60em){
+	   margin-left: 23em;  
+	}
 }
 
 #summa {
     margin-left: 33em;
     font-weight: 700;
+
+	@media screen and (max-width: 60em){
+	   margin-left: 15em;
+	}
 }
 
 .invalid {
-    background-color: #faa;
+    background-color: $pink;
 }
 
 .tooltipVisible {
     display: block !important;
-    background-color: #faa;
+    background-color: $pink;
     position: absolute;
     width: 300px;
     padding: 5px;
     text-align: center;
     font-size: 90%;
-    border-radius: 5px;
+    @include border-radius(5px);
 }
 
 .tooltipHidden {
     display: none;
-}
-
-@media screen and (max-width: 60em) {
-    #total {
-        margin-left: 23em;
-    }
-
-    #summa {
-        margin-left: 15em;
-    }
 }
