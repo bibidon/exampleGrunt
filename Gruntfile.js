@@ -18,7 +18,7 @@
         sass: {
             dev: {
                 files: {
-                    'css/main.css': 'sass/main.scss'
+                    'CSS/main.css': 'sass/main.scss'
                 },
                 options: {
                     compass: true,
@@ -28,7 +28,7 @@
             },
             prod: {
                 files: {
-                    'css/main.build.css': 'sass/main.scss'
+                    'CSS/main.build.css': 'sass/main.scss'
                 },
                 options: {
                     compass: true,
