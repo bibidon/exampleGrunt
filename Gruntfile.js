@@ -16,14 +16,6 @@
                 undef: false,
                 eqnull: true,
                 browser: true,
-                globals: {
-                    jQuery: true,
-                    $: true,
-                    backbone: true,
-                    underscore: true,
-                    requirejs: true,
-                    console: true
-                }
             },
             src: 'src/js/**/*.js'
         },
@@ -32,11 +24,12 @@
         copy: {
             dev: {
                 files: [
-                    { expand: true, cwd: 'bower_components/backbone/', src: 'backbone.js', dest: 'src/js/libs' },
-                    { expand: true, cwd: 'bower_components/jquery/dist/', src: 'jquery.js', dest: 'src/js/libs' },
-                    { expand: true, cwd: 'bower_components/requirejs/', src: 'require.js', dest: 'src/js/libs' },
-                    { expand: true, cwd: 'bower_components/underscore/', src: 'underscore.js', dest: 'src/js/libs' },
-                    { expand: true, cwd: 'bower_components/bootstrap/dist/css/', src: 'bootstrap.css', dest: 'src/css/libs' }
+                    { expand: true, cwd: 'bower_components/backbone/', src: 'backbone.js', dest: 'src/js/libs/' },
+                    { expand: true, cwd: 'bower_components/jquery/dist/', src: 'jquery.js', dest: 'src/js/libs/' },
+                    { expand: true, cwd: 'bower_components/requirejs/', src: 'require.js', dest: 'src/js/libs/' },
+                    { expand: true, cwd: 'bower_components/underscore/', src: 'underscore.js', dest: 'src/js/libs/' },
+                    { expand: true, cwd: 'bower_components/bootstrap/dist/css/', src: 'bootstrap.css', dest: 'src/css/libs/' },
+                    { expand: true, cwd: 'bower_components/bootstrap/dist/css/', src: 'bootstrap.css.map', dest: 'src/css/libs/' }
                 ]
             }
         },
@@ -75,15 +68,15 @@
             }
         },
 
-        //concat: {
-        //    options: {
-        //        separator: ';'
-        //    },
-        //    build: {
-        //        src: ['build/css/*.css', 'src/css/libs/*.css'],
-        //        dest: 'build/build.css'
-        //    }
-        //},
+        concat: {
+            options: {
+                separator: ';'
+            },
+            build: {
+                src: ['build/css/*.css', 'src/css/libs/*.css'],
+                dest: 'build/build.css'
+            }
+        },
 
         //watch: {
         //    sass: {
