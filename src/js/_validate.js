@@ -15,12 +15,12 @@
 
         if (masIncorrect.length === 0) {
             if (name === "name" || name === "description") {
-                if (value.search(patternLetter) == -1) {
+                if (value.search(patternLetter) === -1) {
                     masIncorrect.push(name);
                 }
             }
             if (name === "price" || name === "quantity") {
-                if (value.search(patternNumber) == -1) {
+                if (value.search(patternNumber) === -1) {
                     masIncorrect.push(name);
                 }
             }
@@ -28,11 +28,11 @@
             return;
         }
 
-        if (masIncorrect.length != 0) {
+        if (masIncorrect.length !== 0) {
             if (name === "name" || name === "description") {
-                if (value.search(patternLetter) == -1) {
+                if (value.search(patternLetter) === -1) {
                     for (var i = 0; i < masIncorrect.length; i++) {
-                        if (masIncorrect[i] == name) {
+                        if (masIncorrect[i] === name) {
                             correct = false;
                             return;
                         }
@@ -43,9 +43,9 @@
                 }
             }
             if (name === "price" || name === "quantity") {
-                if (value.search(patternNumber) == -1) {
+                if (value.search(patternNumber) === -1) {
                     for (var j = 0; j < masIncorrect.length; j++) {
-                        if (masIncorrect[j] == name) {
+                        if (masIncorrect[j] === name) {
                             correct = false;
                             return;
                         }
@@ -60,14 +60,14 @@
     }
 
     function _removeValidate() {
-        if (masIncorrect.length != 0) {
+        if (masIncorrect.length !== 0) {
             var patternLetter = /^[A-zА-яЁё]+$/i;
             var patternNumber = /^\d+$/;
             var name = this.offsetParent.attributes["name"].value;
             var value = this.value;
 
             if (name === "name" || name === "description") {
-                if (value.search(patternLetter) == 0) {
+                if (value.search(patternLetter) === 0) {
                     for (var i = 0; i < masIncorrect.length; i++) {
                         if (masIncorrect[i] === name) {
                             masIncorrect.splice(i, 1);
@@ -79,7 +79,7 @@
             }
 
             if (name === "price" || name === "quantity") {
-                if (value.search(patternNumber) == 0) {
+                if (value.search(patternNumber) === 0) {
                     for (var j = 0; j < masIncorrect.length; j++) {
                         if (masIncorrect[j] === name) {
                             masIncorrect.splice(j, 1);
@@ -93,7 +93,7 @@
     }
 
     function _alertValidate() {
-        var name = "";
+        var name ;
         var positionTextField = this.getBoundingClientRect();
 
         if (masIncorrect.length === 0) {

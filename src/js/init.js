@@ -1,4 +1,4 @@
-﻿define(["Models/data", "Views/headerView", "Views/addTrView"], function (data, hView, tView) {
+﻿define(["Models/data", "Views/headerView", "Views/addTrView"], function (data, HView, TView) {
 
     var init = (function () {
 
@@ -19,11 +19,11 @@
             },
 
             headerRender: function () {
-                appViewheader = new hView();
+                appViewheader = new HView();
             },
 
             addTrRender: function () {
-                appViewTable = new tView();
+                appViewTable = new TView();
             }
         };
 

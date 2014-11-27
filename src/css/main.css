@@ -1,109 +1,109 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000314}}
 .table-bordered {
   margin: auto;
   border: none;
   width: 50% !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000320}}
 td, th {
   position: relative;
   min-width: 145px;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000326}}
 .withoutborder {
   border: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000330}}
 .actions {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000333}}
 .actions button {
   padding: 0;
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000339}}
 .btn-sort {
   padding: 0;
   float: right;
   margin-right: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000345}}
 .btn-edit, .btn-ok, .btn-addok {
   position: absolute;
   top: 9px;
   left: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000350}}
 .btn-trash, .btn-cansel, .btn-addcansel {
   position: absolute;
   top: 9px;
   right: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000355}}
 .btn-ok, .btn-cansel, .btn-hidden, .btn-addok, .btn-addcansel {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000359}}
 .btn-visible {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000363}}
 .total, .summa {
   visibility: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000367}}
 .btn-group-xs {
   width: 20px;
   height: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000372}}
 .glyphicon {
   top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000376}}
 #total {
   margin-left: 49.5em;
   font-weight: 700;
 }
 @media screen and (max-width: 60em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000376}}
   #total {
     margin-left: 23em;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000385}}
 #summa {
   margin-left: 33em;
   font-weight: 700;
 }
 @media screen and (max-width: 60em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000385}}
   #summa {
     margin-left: 15em;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000394}}
 .invalid {
   background-color: #faa;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\0000398}}
 .tooltipVisible {
   display: block !important;
   background-color: #faa;
@@ -118,7 +118,7 @@ td, th {
   border-radius: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/sass\/_base\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Git\/exampleGrunt\/src\/sass\/_base\.scss}line{font-family:\00003109}}
 .tooltipHidden {
   display: none;
 }

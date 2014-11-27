@@ -8,7 +8,7 @@
         }
         else {
             data.masModels.splice(0, data.masModels.length);
-            for (prop in localStorage) {
+            for (var prop in localStorage) {
                 var obj = JSON.parse(localStorage[prop]);
                 data.masModels.push(obj);
             }
@@ -22,7 +22,7 @@
     }
 
     function _remove(id) {
-        for (prop in localStorage) {
+        for (var prop in localStorage) {
             if (prop === id) { localStorage.removeItem(prop); }
         }
     }

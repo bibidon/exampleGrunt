@@ -3,6 +3,32 @@
 
     grunt.initConfig({
 
+
+        jshint: {
+            options: {
+                curly: true,
+                eqeqeq: true,
+                immed: true,
+                latedef: true,
+                newcap: true,
+                noarg: true,
+                sub: true,
+                undef: false,
+                eqnull: true,
+                browser: true,
+                globals: {
+                    jQuery: true,
+                    $: true,
+                    backbone: true,
+                    underscore: true,
+                    requirejs: true,
+                    console: true
+                }
+            },
+            src: 'src/js/**/*.js'
+        },
+
+
         copy: {
             dev: {
                 files: [
@@ -18,7 +44,7 @@
         sass: {
             dev: {
                 files: {
-                    'CSS/main.css': 'sass/main.scss'
+                    'src/css/main.css': 'src/sass/main.scss'
                 },
                 options: {
                     compass: true,
@@ -28,21 +54,34 @@
             },
             prod: {
                 files: {
-                    'CSS/main.build.css': 'sass/main.scss'
+                    'build/css/main.build.css': 'src/sass/main.scss',
                 },
                 options: {
                     compass: true,
                     style: 'compressed'
                 }
             }
-        }
+        },
+
+        requirejs: {
+            build: {
+                options: {
+                    baseUrl: 'src/js',
+                    mainConfigFile: "src/js/main.js",
+                    name: 'main',
+                    out: 'build/main.build.js',
+                    preserveLicensecomments: false
+                }
+            }
+        },
 
         //concat: {
         //    options: {
         //        separator: ';'
         //    },
-        //    libs: {
-        //        src: 'bower_components'
+        //    build: {
+        //        src: ['build/css/*.css', 'src/css/libs/*.css'],
+        //        dest: 'build/build.css'
         //    }
         //},
 
@@ -57,11 +96,13 @@
         //    }
         //}
     });
-    
+
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-sass');
-    //grunt.loadNpmTasks('grunt-contrib-requirejs');
+    //grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
     //grunt.loadNpmTasks('grunt-contrib-watch');
 
-   //grunt.registerTask('default', ['sass', 'requirejs']);
+    //grunt.registerTask('default', ['sass', 'requirejs']);
 }

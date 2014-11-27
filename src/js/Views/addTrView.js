@@ -53,7 +53,7 @@
                 this.eventsValidate();
             }
             if (event.currentTarget.classList.contains("btn-addok")) {
-                if (val._masIncorrect.length != 0) { return; }
+                if (val._masIncorrect.length !== 0) { return; }
                 this.saveNewTr();
                 this.hiToVis(event);
             }
@@ -70,7 +70,7 @@
                 this.remove(event);
             }
             if (event.currentTarget.classList.contains("btn-ok")) {
-                if (val._masIncorrect.length != 0) { return; }
+                if (val._masIncorrect.length !== 0) { return; }
                 this.save(event);
                 this.hiToVis(event);
             }
@@ -95,7 +95,9 @@
         //при нажатии кнопки создать
         textareaAndButton: function () {
             _.each($("#newTr > td"), function (td) {
-                if (td.classList.length != 0) return;
+                if (td.classList.length !== 0) {
+                    return;
+                }
                 td.innerHTML = "<textarea cols='10' rows='1'></textarea>";
             });
         },
@@ -127,7 +129,9 @@
             };
             var lastTrTd = $("#newTr > td");
             _.each(lastTrTd, function (td) {
-                if (td.classList.length != 0) return;
+                if (td.classList.length !== 0) {
+                    return;
+                }
                 newModel[td.getAttribute("name")] = $(td.children).val();
             });
             collection.masModels.push(newModel);
@@ -139,7 +143,7 @@
         editind: function (event) {
             var id = event.currentTarget.id;
             $("#" + id + "> td").each(function (indx, el) {
-                if (indx != 0 && indx != 5) {
+                if (indx !== 0 && indx !== 5) {
                     var value = $(el).text();
                     $(el).text("");
                     $(el).append("<textarea cols='10' rows='1'>" + value + "</textarea>");
@@ -178,7 +182,9 @@
             };
             var trTd = $("#" + id + "> td");
             _.each(trTd, function (td) {
-                if (td.attributes.length === 0 || !!(td.attributes.class)) return;
+                if (td.attributes.length === 0 || !!(td.attributes.class)) {
+                    return;
+                }
                 newModel[td.getAttribute("name")] = $(td).text();
             });
             for (var i = 0; i < collection.masModels.length; i++) {
@@ -200,7 +206,7 @@
 
         //метод для скрытия и отображения кнопок
         visToHi: function (event) {
-            if (event.currentTarget.className.search(/btn-plus/) != -1) {
+            if (event.currentTarget.className.search(/btn-plus/) !== -1) {
                 $("#newTr > td > button.btn-plus").addClass("btn-hidden");
                 $("#newTr > td > button.btn-addok").addClass("btn-visible");
                 $("#newTr > td > button.btn-addcansel").addClass("btn-visible");
@@ -214,7 +220,7 @@
 
         //метод для скрытия и отображения кнопок
         hiToVis: function (event) {
-            if (event.currentTarget.className.search(/btn-addok/) != -1 || event.currentTarget.className.search(/btn-addcansel/) != -1) {
+            if (event.currentTarget.className.search(/btn-addok/) !== -1 || event.currentTarget.className.search(/btn-addcansel/) !== -1) {
                 $("textarea").remove();
                 $("#newTr > td > button.btn-plus").removeClass("btn-hidden");
                 $("#newTr > td > button.btn-addok").removeClass("btn-visible");
@@ -226,25 +232,6 @@
                 $("#" + event.currentTarget.id + "> td > button.btn-cansel").removeClass("btn-visible");
             }
         },
-
-        //метод для сортировки данных(моделей) в таблице
-        //sort: function (event) {
-        //    if (event.currentTarget.name === "namesort") {
-        //        this.collection.comparator = function (modelA, modelB) {
-        //            if (modelA.get("name") < modelB.get("name")) return -1;
-        //            if (modelA.get("name") > modelB.get("name")) return 1;
-        //            else return 0;
-        //        }();
-        //    }
-
-        //    if (event.currentTarget.name === "namesortalt") {
-        //        this.collection.comparator = function (modelA, modelB) {
-        //            if (modelA.get("name") < modelB.get("name")) return 1;
-        //            if (modelA.get("name") > modelB.get("name")) return -1;
-        //            else return 0;
-        //        }();
-        //    }
-        //}
     });
 
     return View;
