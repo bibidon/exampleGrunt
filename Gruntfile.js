@@ -17,7 +17,7 @@
                 eqnull: true,
                 browser: true,
             },
-            src: 'src/js/**/*.js'
+            src: ['src/js/**/*.js', '!src/js/libs/*.js']
         },
 
 
@@ -28,8 +28,9 @@
                     { expand: true, cwd: 'bower_components/jquery/dist/', src: 'jquery.js', dest: 'src/js/libs/' },
                     { expand: true, cwd: 'bower_components/requirejs/', src: 'require.js', dest: 'src/js/libs/' },
                     { expand: true, cwd: 'bower_components/underscore/', src: 'underscore.js', dest: 'src/js/libs/' },
-                    { expand: true, cwd: 'bower_components/bootstrap/dist/css/', src: 'bootstrap.css', dest: 'src/css/libs/' },
-                    { expand: true, cwd: 'bower_components/bootstrap/dist/css/', src: 'bootstrap.css.map', dest: 'src/css/libs/' }
+                    { expand: true, cwd: 'bower_components/bootstrap/dist/css/', src: 'bootstrap.min.css', dest: 'build/css/' },
+                    { expand: true, cwd: 'bower_components/bootstrap/dist/', src: 'fonts/*', dest: 'build/' },
+                    { expand: true, cwd: 'src/css/', src: 'main.build.css.map', dest: 'build/' }
                 ]
             }
         },
@@ -68,15 +69,19 @@
             }
         },
 
-        concat: {
-            options: {
-                separator: ';'
-            },
-            build: {
-                src: ['build/css/*.css', 'src/css/libs/*.css'],
-                dest: 'build/build.css'
-            }
-        },
+        //concat: {
+        //    options: {
+        //        separator: ';'
+        //    },
+        //    build: {
+        //        src: ['src/css/main.build.css', 'src/css/libs/bootstrap.min.css'],
+        //        dest: 'build/build.css'
+        //    }
+        //},
+
+        //cssmin: {
+
+        //}
 
         //watch: {
         //    sass: {
